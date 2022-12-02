@@ -1,0 +1,918 @@
+/*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+#F7FFF7 - almost white
+#343434 - dark gray - almost black
+#2F3061 - blue dark
+#FFE66D - yellow
+#A1C6D7 - blue light
+*/
+
+
+/* --- Global Styles --- *
+* ---------------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #F7FFF7;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.25;
+  text-align: justify;
+}
+
+img {
+  width: 300px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h3 {
+font-size: 1rem;
+}
+
+h4 {
+  font-size: 0.85rem;
+}
+
+h5 {
+  font-size: 0.8rem;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+/* -------------------------------- General ---------------------------------------------*/
+
+/* ------- Navbar ------- *
+* ----------------------- */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 2.3rem;
+  background-color: #000;
+  z-index: 99;
+}
+
+.navbar_items {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar_items > * {
+  flex: 1 1 auto;
+}
+
+.navbar_items a {
+  font-size: 0.8rem;
+  color: #eec4c4;
+}
+
+.navbar_items a:hover {
+  color: #c05959;
+}
+
+/* ----- Backgrounds ----- *
+* ------------------------ */
+
+.content_wrap {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+}
+
+.main_container {
+  background-color: #242428;
+  width: 90%;
+  height: calc(100% - 3.5rem);
+  margin: 0px auto;
+  margin-top: 3rem;
+  padding: 15px;
+  position: relative;
+  font-family: Trattatello, 'Brush Script Std', cursive;
+  border: 1px ridge #700101;
+  overflow: hidden;
+  box-shadow: 0px 0px 40px #000;
+  z-index: 1;
+}
+
+.main_container h1 {
+  margin: 0 0 15px 0;
+  color: #c05959;
+  font-size: 1.8rem;
+  text-shadow: -5px 2px 5px #000;
+}
+
+.content_container {
+  height: 90%;
+  overflow: auto;
+  display: flex;
+}
+
+/* ------ Scrollbar ------ *
+* ------------------------ */
+
+.scroll {
+  overflow-y: scroll;
+  background-color: transparent;
+  margin: 0 0 10px 0;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.8); 
+  border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgb(37, 37, 37); 
+}
+
+/* -------------------------------- Home ---------------------------------------------*/
+
+.home_container {
+  width: 90%;
+  height: 95%;
+  margin: 15px auto;
+  padding-right: 5px;
+  position: relative;
+  font-family: Trattatello, 'Brush Script Std', cursive;
+  border: 1px ridge #700101;
+  overflow: hidden;
+  box-shadow: 0px 0px 40px #000;
+  z-index: 1;
+  background-image: linear-gradient(to bottom, 
+  rgba(255, 255, 255, 0.4) 0%, 
+  rgba(17,17,17,0.8) 50%);
+}
+
+main {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+/* ---- Navigation ---- *
+* --------------------- */
+
+.nav_btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.navigation {
+  position: static;
+  background-color: rgba(17, 17, 17, 0.4);
+}
+
+.navigation_container {
+  margin-top: 80px;
+}
+
+.nav_items {
+  min-width: 75px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_items a {
+  color: #700101;
+  font-size: 20px;
+  text-shadow: 0.5px 0.5px #fff;
+}
+
+.item {
+  position: relative;
+  padding: 30px;
+  flex: 1 1 0;
+}
+
+.item:hover {
+  background-color: rgba(200, 200, 200, 0.2);
+}
+
+.nav_extent {
+  height: 100%;
+  width: 6rem;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: inherit;
+  z-index: 3;
+}
+
+.nav_extent h4 {
+  color: #eec4c4;
+  text-shadow: 1px 1px #700101;
+  padding-left: 5px;
+}
+
+/* ------ Profile ------ *
+* ---------------------- */
+
+.profile {
+  width: 100vh;
+  height: 100%;
+  position: relative;
+  top: 5%;
+  margin-left: 40px;
+}
+
+.profile_container {
+  width: 100%;
+  height: 90%;
+  background-image:  linear-gradient(to bottom, 
+  rgba(255, 255, 255, 0) 40%, 
+  rgba(17,17,17,1) 100%), url("/images/LinkedIn\ Profile\ Transparent.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.profile_text {
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 2;
+}
+
+.profile_text h1 {
+  text-align: center;
+  margin: 0;
+  text-shadow: 2px 2px 1px #700101;
+  color: #F7FFF7;
+  font-size: 1.5rem;
+}
+
+.profile_text h3 {
+  color: #c05959;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.social_icons {
+  margin: 8px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social_icons_link {
+  padding: 2px;
+  margin: 0 10px;
+  color: #F7FFF7;
+}
+
+/* ------ About ------ *
+* -------------------- */
+
+.about {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 5%;
+  padding: 25px 25px 35px 10px;
+  font-family: Trattatello, 'Brush Script Std', cursive;
+  overflow: auto;
+}
+
+.about h1 {
+  margin: 0 0 5px;
+  color: #c05959;
+  font-size: 2rem;
+  text-shadow: -5px 2px 5px #000;
+}
+
+.about_me_container {
+  margin-right: 15px;
+  height: 100%;
+}
+
+.about_me h3 {
+  color: #c05959;
+  margin-bottom: 0;
+}
+
+.about_me p {
+  color: #eec4c4;
+  margin-top: 0;
+}
+
+.about_me a {
+  color: inherit;
+}
+
+.about_me a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------------- Work Experience ---------------------------------------------*/
+
+.job_titles_container {
+  flex: 1 1 0;
+  overflow: auto;
+  min-width: 255px;
+}
+
+.job_description_container {
+  flex: 2 1 0;
+  position: relative;
+}
+
+.job_titles {
+  padding-right: 30px;
+  margin-top: 25px;
+  text-align: left;
+  position: relative;
+}
+
+.job_titles h3 {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  color: #c05959;
+}
+
+.job_titles h3 i {
+  color: #d79090;
+}
+
+.job_titles a {
+  color: #c05959;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  position: absolute;
+  right: 5px;
+  top: 20%;
+}
+
+.positioning {
+  height: 90%;
+  width: 95%;
+  position: sticky;
+  top: 0;
+}
+
+.job_description {
+  max-height: 100%;
+  height: fit-content;
+  width: 100%;
+  padding: 15px;
+  margin: 0 15px;
+  background-image: linear-gradient(to bottom, hsla(0, 79%, 28%, 0.4) 30%, hsla(0, 53%, 56%, 0.8) 100%);
+  color: #eec4c4;
+  border: 3px solid #700101;
+  border-radius: 10px;
+  visibility: hidden;
+  position: absolute;
+}
+
+.job_description p {
+  margin: 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+#amdocs_desc img {
+  width: 45%;
+  position: relative;
+  left: 25%;
+}
+
+#covid_desc img {
+  width: 30%;
+  position: relative;
+  left: 35%;
+  margin-top: 35px;
+}
+
+#event_desc img {
+  width: 35%;
+  position: relative;
+  left: 30%;
+}
+
+#mil_desc img {
+  width: 25%;
+  position: relative;
+  left: 35%;
+  margin-top: 35px;
+}
+
+/* ---------------------------------- Education -----------------------------------------------*/
+
+.content_education {
+  height: calc(90% - 60px);
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ---- Education ---- *
+* -------------------- */
+
+.education_container {
+  flex: 1 1 0;
+  position: relative;
+  max-height: 350px;
+  overflow: auto;
+}
+
+.education {
+  padding: 0;
+  margin-top: 25px;
+  text-align: left;
+}
+
+.education h3 {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  color: #c05959;
+}
+
+.education ul {
+  color: #d79090;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/* ----- Skills ----- *
+* ------------------- */
+
+.skills_container {
+  flex: 1 1 0;
+  padding-right: 5px;
+  max-height: 350px;
+}
+
+.skills_container h3 {
+  color: #c05959;
+  margin: 0;
+}
+
+.skills_container h4 {
+  color: #d79090;
+  margin-bottom: 2px;
+  margin-top: 0.8rem;
+}
+
+#skills_line {
+  border: 0.1px solid #c05959;
+  width: 18rem;
+  max-width: 100%;
+  margin: 0;
+}
+
+.skills {
+  margin: 0;
+  height: 10px;
+  width: 18rem;
+  border: 1.8px solid #8b3c22;
+  animation: skills-fill 1.5s ease-out forwards;
+}
+
+.skills_container > .skills:hover {
+  animation: skills-fill 2.5s ease-out forwards infinite alternate;
+}
+
+@keyframes skills-fill {
+  0% {
+  box-shadow: inset 0 0 rgb(178, 99, 62);
+  }
+}
+
+#critical_think {
+  box-shadow: inset calc(18rem - 0.85rem) 0 rgb(178, 99, 62);
+}
+
+#creativity, #leadership {
+  box-shadow: inset calc(18rem - 1.2rem) 0 rgb(178, 99, 62);
+}
+
+#learning {
+  box-shadow: inset calc(18rem - 1.5rem) 0 rgb(178, 99, 62);
+}
+
+#coding {
+  box-shadow: inset calc(18rem - 2.2rem) 0 rgb(178, 99, 62);
+}
+
+#teamwork {
+  box-shadow: inset calc(18rem - 2.2rem) 0 rgb(178, 99, 62);
+}
+
+.certificates_button {
+  width: 150px;
+  height: 40px;
+  font-size: 0.8rem;
+  border: 1.5px solid #8b3c22;
+  border-radius: 2px;
+  background-color:  rgb(178, 99, 62);
+  color: #eec4c4;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  cursor: pointer;
+  transition: background-color 2s;
+}
+
+.certificates_button:hover {
+  background-color: #8b3c22;
+}
+
+/* -- Certificates -- *
+* ------------------- */
+
+.certificates_container {
+  height: 100%;
+  width: 100%;
+  background-color: #eec4c4;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 100;
+  visibility: hidden;
+}
+
+.certificates_container button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.certificates {
+  min-height: 243px;
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+  position: relative;
+}
+
+.certificates:first-child, .certificates + .certificates {
+  border-left: 0;
+  border-top: 0;
+}
+
+.certificates_content_wrap {
+  min-width: 60%;
+  min-height: 75%;
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+}
+
+.certificates img {
+  width: 110px;
+  min-height: 95px;
+  cursor: pointer;
+}
+
+.landscape img {
+  width: 150px;
+  cursor: pointer;
+}
+
+.certificates h5 {
+  margin: -2px 0 10px;
+  color: #c05959;
+}
+
+.certificates h4 {
+  color: #700101;
+  margin: 5px 0 0;
+}
+
+/* ---------------------------------- Portfolio -----------------------------------------------*/
+
+/* ---- Projects ---- *
+* ------------------- */
+
+.projects_container {
+  height: 90%;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects {
+  text-align: center;
+  padding: 15px;
+  min-height: 200px;
+  color: #d79090;
+  position: relative;
+  background-image: linear-gradient(to top, hsla(0, 0%, 0%, 0.2) 0%, hsla(0, 0%, 0%, 0.75) 100%);
+}
+
+.videos {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.projects_content_wrap {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.projects h3 {
+  color: #c05959;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.projects p {
+  font-size: 0.7rem;
+  margin: 5px;
+}
+
+.projects button {
+  font-size: 0.7rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.projects a {
+  color: #eec4c4;
+  font-size: inherit;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------- Rensponsive ----------------------------------------------*/
+
+@media screen and (max-width: 1025px) {
+  /* -- Certificates -- */
+  .certificates_container{
+    grid-template-columns: auto auto auto;
+  }
+
+  /* -- Home -- */
+  .profile {
+    margin-left: 0;
+  }
+
+  .about_me {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 913px) {
+  /* -- Work Experience -- */
+  .job_description {
+    overflow: auto;
+    height: 100%;
+    max-height: 50vw;
+  }
+
+  .job_description img {
+    display: none;
+  }
+
+  /* -- Portfolio -- */
+  .projects_container {
+    display: block;
+  }
+
+  /* -- Home -- */
+  .profile {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .about {
+    margin-left: 10px;
+  }
+
+  .about h1 {
+    font-size: 2.5rem;
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  /* -- Work Experience -- */
+  .job_titles a { 
+    transform: rotate(90deg);
+    top: 5px;
+  }
+  /* --! Need JavaScript for "visibility: hidden" when job_description is shown !-- */
+  .job_description_container {
+    position: relative;
+    width: 75vw;
+    height: 200px;
+    margin: 10px;
+  }
+  
+  /* -- Education -- */
+  .content_education {
+    flex-direction: column;
+    overflow: auto;
+    flex-wrap: nowrap;
+  }
+
+  .education_container, .skills_container {
+    height: fit-content;
+    overflow: visible;
+    max-height: none;
+  }
+
+  /* -- Certificates -- */
+  .certificates_container{
+    grid-template-columns: auto auto;
+  }
+
+  .certificates {
+    min-height: 180px;
+  }
+  
+  .certificates_content_wrap {
+    bottom: 3%;
+    left: 15%;
+  }
+  
+  .certificates img {
+    width: 80px;
+    min-height: 60px;
+  }
+  
+  .landscape img {
+    width: 100px;
+  }
+  
+  .certificates h5 {
+    font-size: 0.65rem;
+  }
+  
+  .certificates h4 {
+    font-size: 0.85rem;
+  }
+
+  /* -- Portfolio -- */
+  .projects_content_wrap {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* -- Home -- */
+  .nav_btn {
+    opacity: 1;
+  }
+
+  .navigation {
+    transition: all 1s; 
+  }
+
+  .navigation_hide {
+    position: absolute;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+
+  .nav_items {
+    min-width: 40px;
+  }
+  
+  .nav_items a {
+    font-size: 15px;
+    text-shadow: 0.1px 0.1px #fff;
+  }
+  
+  .item {
+    padding: 15px;
+    margin: 15px auto;
+  }
+
+  .about {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .about h1 {
+    font-size: 1.8rem;
+    text-shadow: -2px 1px 2px #000;
+  }
+  
+  .about_me_container {
+    margin-right: 0;
+    height: 100%;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  /* -- Education -- */
+  .skills_container h4 {
+    font-size: 0.7rem;
+  }
+
+  .skills {
+    margin: 0;
+    height: 10px;
+    width: 13rem;
+    border: 1.8px solid #8b3c22;
+  }
+  
+  #critical_think {
+    box-shadow: inset calc(13rem - 0.75rem) 0 rgb(178, 99, 62);
+  }
+  
+  #creativity, #leadership {
+    box-shadow: inset calc(13rem - 1rem) 0 rgb(178, 99, 62);
+  }
+  
+  #learning {
+    box-shadow: inset calc(13rem - 1.2rem) 0 rgb(178, 99, 62);
+  }
+  
+  #coding {
+    box-shadow: inset calc(13rem - 1.8rem) 0 rgb(178, 99, 62);
+  }
+  
+  #teamwork {
+    box-shadow: inset calc(13rem - 1.8rem) 0 rgb(178, 99, 62);
+  }
+
+  /* -- Certificates -- */
+  .certificates_container{
+    grid-template-columns: auto;
+  }
+
+  /* -- Portfolio -- */
+  .projects_content_wrap {
+    width: 90%;
+  }
+  
+  .projects h3 {
+    font-size: 1rem;
+  }
+  
+  .projects p, .projects button {
+    font-size: 0.65rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  html {
+    font-size: 22px;
+  }
+}

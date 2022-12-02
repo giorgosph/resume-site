@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgios Philippou Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/084d952944.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="content_wrap">
+
+      <!--- Navbar ---->
+      <section class="navbar">
+        <ul class="navbar_items">
+          <li><a href="/">Home</a></li>
+          <li><a href="/work-experience.html">Work Experience</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="mailto:g.philippou00@gmail.com">Email Me</a></li>
+        </ul>
+      </section>
+    
+      <!--- Main --->
+      <div class="main_container">
+        <h1>Education</h1>
+        <div class="content_education">
+
+          <!-- Education -->
+          <div class="education_container scroll">
+            <!-- Copy section to add education item -->
+            <section class="education">
+              <h3><i>September 2019 - June 2022</i></h3>
+              <h3>University of Reading, UK - BSc Computer Science</h3>
+              <ul>
+                <li>1st Year Grade 73% - First class</li>
+                <li>2nd Year Grade 73% - First class</li>
+                <li>1st Year Grade 74% - First class</li>
+              </ul>
+            </section>
+            <!-- End of section -->
+            <section class="education">
+              <h3><i>September 2012 - June 2018</i></h3>
+              <h3>Pascal English School, Nicosia, Cyprus</h3>
+              <ul>
+                <li>Apolytirion 93.5%</li>
+                <li>IELTS English as a second language 6.5/9</li>
+                <li>IGCSE: Mathematics(A), Art(A)</li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Skills -->
+          <div class="skills_container">
+            <h3>Technical & Soft Skills</h3>
+            <hr id="skills_line">
+            <!-- Copy to add Skill -->
+            <h4>Critical Thinking & Problem Solving</h4>
+            <section id='critical_think' class="skills" title="~9/10"></section>
+            <!-- End -->
+            <h4>Leaderdhip</h4>
+            <section id='leadership' class="skills" title="~9/10"></section>
+            <h4>Creativity</h4>
+            <section id='creativity' class="skills" title="~9/10"></section>
+            <h4>Learning</h4>
+            <section id='learning' class="skills" title="~9/10"></section>
+            <h4>Coding & OOP Design</h4>
+            <section id='coding' class="skills" title="~8/10"></section>
+            <h4>Teamwork</h4>
+            <section id='teamwork' class="skills" title="~8/10"></section>
+          </div>
+        </div>
+        <button class="certificates_button" type="button" onclick="openCert()">View Certificates</button>
+      
+        <!-- Certificates -->
+        <div id='certificates_container_id' class="certificates_container scroll">
+          <!-- Copy section to add Certificate -->
+          <section class="certificates">
+            <section class="certificates_content_wrap">
+                <img src="/images/BSc Computer Science UoR.jpg" id="comp_science" onclick="fullScreen('comp_science')" alt="BSc Degree of Computer Science">
+              <h4>BSc Computer Science</h4>
+              <h5>University of Reading</h5>
+            </section>
+          </section>
+          <!-- End of Section -->
+          <section class="certificates">
+            <section class="certificates_content_wrap">
+              <img src="/images/AWS Certified Cloud Practitioner.png" id="aws" onclick="fullScreen('aws')" alt="AWS Certified Cloud Practitioner">
+              <h4>AWS Practitioner</h4>
+              <h5>Amazon Web Services</h5>
+            </section>
+          </section>
+          <!-- add second class if img is landscape -->
+          <section class="certificates landscape">
+            <section class="certificates_content_wrap">
+              <img src="/images/Advanced Java Programming - LinkedIn Learning.jpg" id="link_java" onclick="fullScreen('link_java')" alt="Advanced Java">
+              <h4>Advanced Java</h4>
+              <h5>LinkedIn Learning</h5>
+            </section>
+          </section>
+          <section class="certificates landscape">
+            <section class="certificates_content_wrap">
+              <img src="/images/JavaScript Essential Training - LinkedIn Learning.jpg" id="link_js" onclick="fullScreen('link_js')" alt="JavaScript">
+              <h4>JavaScript</h4>
+              <h5>LinkedIn Learning</h5>
+            </section>
+          </section>
+          <section class="certificates landscape">
+            <section class="certificates_content_wrap">
+              <img src="/images/CSS Essential Training - LinkedIn Learning.jpg" id="link_css" onclick="fullScreen('link_css')" alt="CSS">
+              <h4>CSS</h4>
+              <h5>LinkedIn Learning</h5>
+            </section>
+          </section>
+          <section class="certificates landscape">
+            <section class="certificates_content_wrap">
+              <img src="/images/HTML Essential Training - LinkedIn Learning.jpg" id="link_html" onclick="fullScreen('link_html')" alt="HTML">
+              <h4>HTML</h4>
+              <h5>LinkedIn Learning</h5>
+            </section>
+          </section>
+          <section class="certificates landscape">
+            <section class="certificates_content_wrap">
+              <img src="/images/Introduction to Web Design and Development - LinkedIn Learning.jpg" id="link_web_dev" onclick="fullScreen('link_web_dev')" alt="Web Development">
+              <h4>Web Development</h4>
+              <h5>LinkedIn Learning</h5>
+            </section>
+          </section>
+          <section class="certificates landscape">
+            <section class="certificates_content_wrap">
+              <img src="/images/Learning Linux Shell Scripting - LinkedIn Learning.jpg" id="link_linux" onclick="fullScreen('link_linux')" alt="Linux Shell Scripting">
+              <h4>Linux Shell Scripting</h4>
+              <h5>LinkedIn Learning</h5>
+            </section>
+          </section>
+          <section class="certificates landscape">
+            <section class="certificates_content_wrap">
+              <img src="/images/SQL Essential Training - LinkedIn Learning.jpg" id="link_sql" onclick="fullScreen('link_sql')" alt="SQL">
+              <h4>SQL</h4>
+              <h5>LinkedIn Learning</h5>
+            </section>
+          </section>
+          <button onclick="closeCert()"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+      </div>
+    </div>
+  </body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgios Philippou Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/084d952944.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="content_wrap">
+    
+      <!--- Navbar ---->
+      <section class="navbar">
+        <ul class="navbar_items">
+          <li><a href="/">Home</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/education.html">Education</a></li>
+          <li><a href="mailto:g.philippou00@gmail.com">Email Me</a></li>
+        </ul>
+      </section>
+
+      <!--- Main --->
+      <div class="main_container">
+        <h1>Work Experience</h1>
+        <div class="content_container">
+          <div class="job_titles_container scroll">
+            <!--- Copy section to add job titles --->
+            <section class="job_titles">
+              <h3><i>July 2022 - Present</i></h3>
+              <h3>Software Developer at Amdocs<a onclick="open_desc('amdocs_desc')" class="fa-solid fa-caret-right"></a></h3>
+            </section>
+            <!-- End of section -->
+            <section class="job_titles">
+              <h3><i>August 2021</i></h3>
+              <h3>Scribe for Covid-19 Testing Centers<a onclick="open_desc('covid_desc')" class="fa-solid fa-caret-right"></a></h3>
+            </section>
+            <section class="job_titles">
+              <h3><i>June 2020 - September 2020</i></h3>
+              <h3><i>June 2021 - September 2021</i></h3>
+              <h3>Event Organizer<a onclick="open_desc('event_desc')" class="fa-solid fa-caret-right"></a></h3>
+            </section>
+            <section class="job_titles">
+              <h3><i>June 2018 - August 2019</i></h3>
+              <h3>Military Service<a onclick="open_desc('mil_desc')" class="fa-solid fa-caret-right"></a></h3>
+            </section>
+          </div>
+          <div class="job_description_container">
+            <div class="positioning">
+              <!--- Copy section to add job description (draft)--->
+              <section class="job_description scroll" id="amdocs_desc">
+                <p>Since I joined <strong>Amdocs</strong> I developed my knowledge in computational matters rapidly, by exploiting the in-company tutorials and going through external courses from Amdocs' partners. As a <strong>Software Engineer</strong> I deliver back-end solutions focusing mostly in Java and SQL. Amdocs in Cyprus is well known for offering one of the best working environments in the country. The friendly people, the flexible working hours, and the hybrid model together boosted our hype from the very first day until now.</p>
+                <img src="/images/Amdocs-logo.png" alt="Amdocs Icon">
+              </section>
+              <!-- End of section -->
+              <section class="job_description scroll" id="covid_desc">
+                <p>Serving hundreds of customers per day helped me develop my communication skills. It is vital to reach people with respect and learn how to resolve your customers' problems with patience and calmness. In addition, the working system showed me the importance of team communication to deliver the best possible service.</p>
+                <img src="/images/health icon.png" alt="Health Icon">
+              </section>
+              <section class="job_description scroll" id="event_desc">
+                <p>Organizing my own events made me realize how difficult and time-consuming it is to start your own business. In these two years, I have managed to introduce my events to hundreds of clients and have worked with many people, bars, and businesses. Experimentation broadened my view of how the world and business in it work, focusing on various aspects such as marketing, leadership, organization, and more.</p>
+                <img src="/images/logo.png" alt="Underground Rimes">
+              </section>
+              <section class="job_description scroll" id="mil_desc">
+                <p>Military service was a life-changing experience. I served my country as a reserve officer in the special forces. I went through a lot of drills and training, and then I had the opportunity to lead a team. One of the key concepts that this experience taught me is the importance of living with discipline.</p>
+                <img src="/images/Cypriot_National_Guard_emblem.png" alt="Cypriot National Guard emblem">
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
