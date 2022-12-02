@@ -2,9 +2,7 @@
 
 const path = window.location.pathname;
 
-(path == "/index.html" || path == "/") ? homePage() : path == "/portfolio.html" ? portfolio() : 0;
-
-console.log( path );
+(path == "/resume-site/index.html") ? homePage() : path == "/resume-site/portfolio.html" ? portfolio() : 0;
 
 function homePage(){
   const navItem = document.querySelectorAll(".item");
@@ -50,7 +48,6 @@ let title = document.querySelectorAll(".job_titles");
 let job_desc = document.querySelector(".job_description_container");
 let screen;
 
-console.log(window.screen.width);
 if(window.screen.availWidth < 720) {
   screen = true;
   if(document.contains(job_desc)) job_desc.remove();
