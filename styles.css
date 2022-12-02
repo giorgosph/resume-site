@@ -253,7 +253,7 @@ main {
   height: 90%;
   background-image:  linear-gradient(to bottom, 
   rgba(255, 255, 255, 0) 40%, 
-  rgba(17,17,17,1) 100%), url("/images/LinkedIn\ Profile\ Transparent.png");
+  rgba(17,17,17,1) 100%), url("./images/LinkedIn\ Profile\ Transparent.png");
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
