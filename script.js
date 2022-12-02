@@ -2,7 +2,7 @@
 
 const path = window.location.pathname;
 
-(path == "/resume-site/index.html") ? homePage() : path == "/resume-site/portfolio.html" ? portfolio() : 0;
+(path == "/resume-site/index.html" || path == "/resume-site/") ? homePage() : path == "/resume-site/portfolio.html" ? portfolio() : 0;
 
 function homePage(){
   const navItem = document.querySelectorAll(".item");
